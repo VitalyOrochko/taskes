@@ -1,0 +1,14 @@
+<nav class="navbar navbar-default">
+    <div class="collapse navbar-collapse" id="main-menu" >
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><fmt:message key="nav.main"/><span class="sr-only">(current)</span></a></li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="${pageContext.request.contextPath}/jsp/profile.jsp">${person.name}</a></li>
+            <li><a href="/Controller?command=logout"><fmt:message key="nav.logout"/></a></li>
+            <li><a href="/Controller?command=change_locale&locale=en_US"><fmt:message key="nav.locale.eng"/></a></li>
+            <li><a href="/Controller?command=change_locale&locale=ru_RU"><fmt:message key="nav.locale.rus"/></a></li>
+        </ul>
+    </div>
+</nav>
